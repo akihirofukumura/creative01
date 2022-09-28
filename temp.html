@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Salvation Mountain Coffee - サルベーション・マウンテン コーヒー</title>
+    <link rel="stylesheet" href="css/temp.css">
+</head>
+
+<body>
+    <div class="btn-rui">
+        <a href="#firstview"><img src="images/_top_logo.png" alt="トップページに戻るボタン"></a>
+        <div class="openbtn1"><span></span><span></span><span></span></div>
+    </div>
+
+    <nav id="g-nav" class="Hamback">
+        <div id="g-nav-list">
+            <ul>
+                <li class="Home"><a href="index.html"> <img src="images/_home_logo.png" alt="家のマーク" class="Hamlogo">
+                        <span class="Hometext"> Home</span></a></li>
+                <li class="Menu"><a href="#"> <img src="images/_hamburger_logo02.png" alt="ハンバーガーとコーヒーのマーク"
+                            class="Hamlogo"><span class="Hometext"> Menu</span></a></li>
+                <li class="Visual"><a href="#"> <img src="images/_store_logo.png" alt="店のマーク" class="Hamlogo"><span
+                            class="Hometext"> Visual</span></a></li>
+                <li class="Service"><a href="#"> <img src="images/_ticket_logo.png" alt="チケットのマーク" class="Hamlogo"><span
+                            class="Hometext"> Service</span></a></li>
+            </ul>
+        </div>
+    </nav>
+    <p class="copy">
+        &copy;<span>2022｢Salvation Mountain Coffee｣</span>
+    </p>
+    <img src="images/_logo.png" alt="店のメインロゴ" class="shoplogo">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(".openbtn1").click(function () { //ボタンがクリックされたら
+            $(this).toggleClass('active'); //ボタン自身に activeクラスを付与し
+            $(".btn-rui a").toggleClass('active'); //ボタン自身に activeクラスを付与し
+            $("#g-nav").toggleClass('panelactive'); //ナビゲーションにpanelactiveクラスを付与
+        });
+
+        $("#g-nav a").click(function () { //ナビゲーションのリンクがクリックされたら
+            $(".openbtn1").removeClass('active'); //ボタンの activeクラスを除去し
+            $(".btn-rui a").toggleClass('active'); //ボタン自身に activeクラスを付与し
+            $("#g-nav").removeClass('panelactive'); //ナビゲーションのpanelactiveクラスも除去
+        });
+    </script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

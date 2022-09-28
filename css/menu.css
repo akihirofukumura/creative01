@@ -1,0 +1,736 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.mainText{
+    position: absolute;
+    /* border: solid 1px tomato; */
+    z-index: 30;
+    /* margin-top: 530px; */
+    /* margin-left: 68px; */
+    bottom: 10px;
+    left: 60px;
+    font-family: "A P-OTF 凸版文久見出ゴ Std", sans-serif;
+    font-size: 38px;
+    letter-spacing: 20px;
+    animation: fadeinAnime 6s 0.2s forwards ease;
+}
+
+@keyframes fadeinAnime {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+.Mainback {
+    background-color: #1A8991;
+    margin-top: -6px;
+    height: 2000px;
+}
+
+.subback {
+    background: #CF632B;
+    width: 880px;
+    margin-left: 420px;
+    height: 1850px;
+}
+
+.MainbackWrap{
+    background-color: #1A8991;
+    height: 630px;
+}
+
+.Mainvisual {
+    display: flex;
+    opacity: 90%;
+}
+
+.Mainlogo {
+    position: absolute;
+    z-index: 99;
+    margin-left: 430px;
+    margin-top: 330px;
+    animation: 3s fuwafuwa infinite;
+}
+
+@keyframes fuwafuwa {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.set {
+    font-size: 40px;
+    color: #B39B6F;
+    font-family: Silom, sans-serif;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 50px;
+}
+
+.Mountainham {
+    border: solid 1.5px #ffff;
+    width: 275px;
+    margin-right: 12px;
+    margin-top: 28px;
+    margin-left: 12px;
+    text-align: center;
+}
+
+.Mountainprice {
+    /* border: solid 1px skyblue; */
+    font-family: "Chalkboard SE", sans-serif;
+    color: black;
+    position: absolute;
+    margin-top: -45px;
+    font-size: 25px;
+    text-decoration: underline;
+    background-color: rgba(221, 217, 217, 0.44);
+}
+
+.MountainText {
+    background-color: rgb(234, 228, 228);
+    margin-top: -10px;
+}
+
+.MountainTitle {
+    font-size: 18px;
+    font-family: Silom, sans-serif;
+}
+
+.MountainTextWrap {
+    font-size: 12px;
+    font-family: "A-OTF 太ゴB101 Pr6", sans-serif;
+}
+
+.Salvationham {
+    border: solid 1.5px #ffff;
+    width: 275px;
+    margin-right: -4px;
+    text-align: center;
+}
+
+.popularlogo {
+    position: absolute;
+    margin-left: 180px;
+    margin-top: -40px;
+    transform-origin: center bottom;
+}
+
+
+
+.Salvationprice {
+    /* border: solid 1px skyblue; */
+    font-family: "Chalkboard SE", sans-serif;
+    color: black;
+    position: absolute;
+    margin-top: -45px;
+    font-size: 25px;
+    text-decoration: underline;
+    background-color: rgba(221, 217, 217, 0.44);
+}
+
+.SalvationText {
+    background-color: rgb(234, 228, 228);
+    margin-top: -10px;
+}
+
+.SalvationTitle {
+    font-size: 18px;
+    font-family: Silom, sans-serif;
+}
+
+.SalvationTextWrap {
+    font-size: 12px;
+    font-family: "A-OTF 太ゴB101 Pr6", sans-serif;
+}
+
+.Americanham {
+    border: solid 1.5px #ffff;
+    width: 275px;
+    text-align: center;
+    margin-right: 10px;
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+.Americanprice {
+    /* border: solid 1px skyblue; */
+    font-family: "Chalkboard SE", sans-serif;
+    color: black;
+    position: absolute;
+    margin-top: -45px;
+    font-size: 25px;
+    text-decoration: underline;
+    background-color: rgba(221, 217, 217, 0.44);
+}
+
+.AmericanText {
+    background-color: rgb(234, 228, 228);
+    margin-top: -10px;
+}
+
+.AmericanTitle {
+    font-size: 18px;
+    font-family: Silom, sans-serif;
+}
+
+.AmericanTextWrap {
+    font-size: 12px;
+    font-family: "A-OTF 太ゴB101 Pr6", sans-serif;
+}
+
+#set {
+    float: right;
+}
+
+.attention{
+    font-family: "A-OTF 太ゴB101 Pr6", sans-serif;
+    font-size: 15px;
+    text-align: right;
+    color: #ffff;
+}
+
+.coffee{
+    font-size: 40px;
+    color: #B39B6F;
+    font-family: Silom, sans-serif;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+.AmericanCoffee {
+    border: solid 1.5px #ffff;
+    width: 275px;
+    margin-right: 12px;
+    margin-left: 12px;
+    text-align: center;
+}
+
+.Americancoffeeprice {
+    /* border: solid 1px skyblue; */
+    font-family: "Chalkboard SE", sans-serif;
+    color: black;
+    position: absolute;
+    margin-top: -45px;
+    font-size: 25px;
+    text-decoration: underline;
+    background-color: rgba(221, 217, 217, 0.44);
+}
+
+.AmericancoffeeText {
+    background-color: rgb(234, 228, 228);
+    margin-top: -10px;
+}
+
+.AmricancoffeeTitle {
+    font-size: 18px;
+    font-family: Silom, sans-serif;
+}
+
+.AmericancoffeeTextWrap {
+    font-size: 12px;
+    font-family: "A-OTF 太ゴB101 Pr6", sans-serif;
+    }
+
+.Peacecoffee {
+    border: solid 1.5px #ffff;
+    width: 275px;
+    margin-right: -4px;
+    text-align: center;
+}
+
+.peaceprice {
+    /* border: solid 1px skyblue; */
+    font-family: "Chalkboard SE", sans-serif;
+    color: black;
+    position: absolute;
+    margin-top: -45px;
+    font-size: 25px;
+    text-decoration: underline;
+    background-color: rgba(221, 217, 217, 0.44);
+}
+
+.peaceText {
+    background-color: rgb(234, 228, 228);
+    margin-top: -10px;
+}
+
+.peaceTitle {
+    font-size: 18px;
+    font-family: Silom, sans-serif;
+}
+
+.peaceTextWrap {
+    font-size: 12px;
+    font-family: "A-OTF 太ゴB101 Pr6", sans-serif;
+}
+
+.Caramelcoffee {
+    border: solid 1.5px #ffff;
+    width: 275px;
+    margin-right: 12px;
+    margin-left: 12px;
+    text-align: center;
+}
+
+.Caramelprice {
+    /* border: solid 1px skyblue; */
+    font-family: "Chalkboard SE", sans-serif;
+    color: black;
+    position: absolute;
+    margin-top: -45px;
+    font-size: 25px;
+    text-decoration: underline;
+    background-color: rgba(221, 217, 217, 0.44);
+}
+
+.CaramelText {
+    background-color: rgb(234, 228, 228);
+    margin-top: -10px;
+}
+
+.CaramelTitle {
+    font-size: 18px;
+    font-family: Silom, sans-serif;
+}
+
+.CaramelTextWrap {
+    font-size: 12px;
+    font-family: "A-OTF 太ゴB101 Pr6", sans-serif;
+}
+
+#coffee{
+    float: right;
+}
+
+.Hamburger{
+    font-size: 40px;
+    color: #B39B6F;
+    font-family: Silom, sans-serif;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    clear: both;
+}
+
+.AmazingHam{
+    border: solid 1px #ffff;
+    width: 152px;
+    text-align: center;
+    margin-left: 26px;
+}
+
+.Amazingprice{
+    /* border: solid 1px #ffff; */
+    font-family: "Chalkboard SE", sans-serif;
+    color: black;
+    position: absolute;
+    margin-top: -38px;
+    font-size: 20px;
+    text-decoration: underline;
+    background-color: rgba(221, 217, 217, 0.44);
+}
+
+.AmazingText{
+    background-color: rgb(234, 228, 228);
+    margin-top: -10px;
+}
+
+.AmazingTitle{
+    font-size: 15px;
+    font-family: Silom, sans-serif;
+}
+
+.AmazingTextWrap{
+    font-size: 12px;
+    font-family: "A-OTF 太ゴB101 Pr6", sans-serif;
+}
+
+.CheeseHam{
+    border: solid 1px #ffff;
+    width: 152px;
+    text-align: center;
+    margin-left: 26px;
+}
+
+.Cheesepraice{
+    /* border: solid 1px #ffff; */
+    font-family: "Chalkboard SE", sans-serif;
+    color: black;
+    position: absolute;
+    margin-top: -38px;
+    font-size: 20px;
+    text-decoration: underline;
+    background-color: rgba(221, 217, 217, 0.44);
+}
+
+.CheeseText{
+    background-color: rgb(234, 228, 228);
+    margin-top: -10px;
+}
+
+.cheeseTitle{
+    font-size: 15px;
+    font-family: Silom, sans-serif;
+}
+
+.CheeseTextWrap{
+    font-size: 12px;
+    font-family: "A-OTF 太ゴB101 Pr6", sans-serif;
+}
+
+.AmericanWrapham{
+    border: solid 1px #ffff;
+    width: 152px;
+    text-align: center;
+    margin-left: 26px;
+}
+
+.AmericanWrapprice{
+    /* border: solid 1px #ffff; */
+    font-family: "Chalkboard SE", sans-serif;
+    color: black;
+    position: absolute;
+    margin-top: -38px;
+    font-size: 20px;
+    text-decoration: underline;
+    background-color: rgba(221, 217, 217, 0.44);
+}
+
+.AmericanWrapText{
+    background-color: rgb(234, 228, 228);
+    margin-top: -10px;
+}
+
+.AmericanWrapTitle{
+    font-size: 15px;
+    font-family: Silom, sans-serif;
+}
+
+.AmericanWrapTextWrap{
+    font-size: 12px;
+    font-family: "A-OTF 太ゴB101 Pr6", sans-serif;
+}
+
+.Eggham{
+    border: solid 1px #ffff;
+    width: 152px;
+    text-align: center;
+    margin-left: 26px;
+}
+
+.Egghamprice{
+    /* border: solid 1px #ffff; */
+    font-family: "Chalkboard SE", sans-serif;
+    color: black;
+    position: absolute;
+    margin-top: -38px;
+    font-size: 20px;
+    text-decoration: underline;
+    background-color: rgba(221, 217, 217, 0.44);
+}
+
+.EgghamText{
+    background-color: rgb(234, 228, 228);
+    margin-top: -10px;
+}
+
+.EgghamTitle{
+    font-size: 15px;
+    font-family: Silom, sans-serif;
+}
+
+.EgghamTextWrap{
+    font-size: 12px;
+    font-family: "A-OTF 太ゴB101 Pr6", sans-serif;
+}
+
+
+.Blackham{
+    border: solid 1px #ffff;
+    width: 152px;
+    text-align: center;
+    margin-right: 6px;
+}
+
+.Blackhamprice{
+    /* border: solid 1px #ffff; */
+    font-family: "Chalkboard SE", sans-serif;
+    color: black;
+    position: absolute;
+    margin-top: -38px;
+    font-size: 20px;
+    text-decoration: underline;
+    background-color: rgba(221, 217, 217, 0.44);
+}
+
+.BlackhamText{
+    background-color: rgb(234, 228, 228);
+    margin-top: -10px;
+}
+
+.BlackhamTitle{
+    font-size: 15px;
+    font-family: Silom, sans-serif;
+}
+
+.BlackhamTextWrap{
+    font-size: 12px;
+    font-family: "A-OTF 太ゴB101 Pr6", sans-serif;
+}
+
+#HamSub{
+    float: right;
+}
+
+.Sandwich{
+    font-size: 40px;
+    color: #B39B6F;
+    font-family: Silom, sans-serif;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    clear: both;
+}
+
+.VegetableSand{
+    border: solid 1px #ffff;
+    width: 152px;
+    text-align: center;
+    margin-left: 26px;
+}
+
+.VegetableSandprice{
+    /* border: solid 1px #ffff; */
+    font-family: "Chalkboard SE", sans-serif;
+    color: black;
+    position: absolute;
+    margin-top: -38px;
+    font-size: 20px;
+    text-decoration: underline;
+    background-color: rgba(221, 217, 217, 0.44);
+}
+
+.VegetableSandText{
+    background-color: rgb(234, 228, 228);
+    margin-top: -10px;
+}
+
+.VegetableSandTitle{
+    font-size: 15px;
+    font-family: Silom, sans-serif;
+}
+
+.VegetableSandTextWrap{
+    font-size: 12px;
+    font-family: "A-OTF 太ゴB101 Pr6", sans-serif;
+}
+
+.HamSand{
+    border: solid 1px #ffff;
+    width: 152px;
+    text-align: center;
+    margin-left: 26px;
+}
+
+.HamSandprice{
+    /* border: solid 1px #ffff; */
+    font-family: "Chalkboard SE", sans-serif;
+    color: black;
+    position: absolute;
+    margin-top: -38px;
+    font-size: 20px;
+    text-decoration: underline;
+    background-color: rgba(221, 217, 217, 0.44);
+}
+
+.HamSandText{
+    background-color: rgb(234, 228, 228);
+    margin-top: -10px;
+}
+
+.HamSansTitle{
+    font-size: 15px;
+    font-family: Silom, sans-serif;
+}
+
+.HamSandTextWrap{
+    font-size: 12px;
+    font-family: "A-OTF 太ゴB101 Pr6", sans-serif;
+}
+
+.KronSand{
+    border: solid 1px #ffff;
+    width: 152px;
+    text-align: center;
+    margin-left: 26px;
+}
+
+.KronSandprice{
+    /* border: solid 1px #ffff; */
+    font-family: "Chalkboard SE", sans-serif;
+    color: black;
+    position: absolute;
+    margin-top: -38px;
+    font-size: 20px;
+    text-decoration: underline;
+    background-color: rgba(221, 217, 217, 0.44);
+}
+
+.KronSandText{
+    background-color: rgb(234, 228, 228);
+    margin-top: -10px;
+}
+
+.KornSandTitle{
+    font-size: 15px;
+    font-family: Silom, sans-serif;
+}
+
+.KornSandTextWrap{
+    font-size: 12px;
+    font-family: "A-OTF 太ゴB101 Pr6", sans-serif;
+}
+.SmokeSand{
+    border: solid 1px #ffff;
+    width: 152px;
+    text-align: center;
+    margin-left: 26px;
+}
+
+.SmokeSandprice{
+    /* border: solid 1px #ffff; */
+    font-family: "Chalkboard SE", sans-serif;
+    color: black;
+    position: absolute;
+    margin-top: -38px;
+    font-size: 20px;
+    text-decoration: underline;
+    background-color: rgba(221, 217, 217, 0.44);
+}
+
+.SmokeSandText{
+    background-color: rgb(234, 228, 228);
+    margin-top: -10px;
+}
+
+.SmokeSandTitle{
+    font-size: 15px;
+    font-family: Silom, sans-serif;
+}
+
+.SmokeSandTextWrap{
+    font-size: 12px;
+    font-family: "A-OTF 太ゴB101 Pr6", sans-serif;
+}
+
+.AvocadoSand{
+    border: solid 1px #ffff;
+    width: 152px;
+    text-align: center;
+    margin-right: 6px;
+}
+
+.Avocadoprice{
+    /* border: solid 1px #ffff; */
+    font-family: "Chalkboard SE", sans-serif;
+    color: black;
+    position: absolute;
+    margin-top: -38px;
+    font-size: 20px;
+    text-decoration: underline;
+    background-color: rgba(221, 217, 217, 0.44);
+}
+
+.AvocadoText{
+    background-color: rgb(234, 228, 228);
+    margin-top: -10px;
+}
+
+.AvocadoTitle{
+    font-size: 15px;
+    font-family: Silom, sans-serif;
+}
+
+.AvocadoTextWrap{
+    font-size: 12px;
+    font-family: "A-OTF 太ゴB101 Pr6", sans-serif;
+}
+
+#Sand{
+    float: right;
+}
+
+.else{
+    background: #0A2C43;
+    width: 880px;
+    margin-left: 420px;
+    margin-top: -150px;
+    height: 630px;
+    text-align: center;
+}
+
+.Dessert{
+    color: #B39B6F;
+    font-size: 40px;
+    padding-top: 20px;
+}
+
+.DessertWrap{
+    color: #ffff;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+.Salad{
+    color: #B39B6F;
+    font-size: 40px;
+    padding-top: 40px;
+}
+
+.SaladWrap{
+    color: #ffff;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+.Drink{
+    color: #B39B6F;
+    font-size: 40px;
+    padding-top: 20px;
+}
+
+.DrinkWrap{
+    color: #ffff;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+.Fries{
+    color: #B39B6F;
+    font-size: 40px;
+    padding-top: 20px;
+}
+
+.FriesWrap{
+    color: #ffff;
+    font-size: 20px;
+    letter-spacing: 3px;
+}

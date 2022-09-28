@@ -1,0 +1,523 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*ここからトップページボタン */
+.topbtn {
+    flex-direction: row-reverse;
+    position: fixed;
+    z-index: 9999;
+    /* border: tomato 1px solid; */
+    width: 100%;
+    margin-top: 8px;
+    margin-left: 1570px;
+}
+
+.btn-rui {
+    display: flex;
+
+    position: fixed;
+    z-index: 9999;
+    /*ボタンを最前面に*/
+    top: 10px;
+    right: 10px;
+}
+
+a.active {
+    animation: hidden 0.3s ease-in-out forwards;
+}
+
+@keyframes hidden {
+    0% {
+        display: block;
+        opacity: 1;
+    }
+
+    100% {
+        display: none;
+        opacity: 0;
+    }
+}
+
+/* ここからハンバーガーメニュー内の位置*/
+
+.Home img {
+    margin-bottom: 3px;
+}
+
+.Menu {
+    margin-top: 50px;
+}
+
+.Menu img {
+    width: 41px !important;
+    margin-left: 4px;
+    margin-bottom: 7px;
+}
+
+.Visual {
+    margin-top: 50px;
+}
+
+.Visual img {
+    margin-bottom: 2px;
+}
+
+.Service {
+    margin-top: 50px;
+}
+
+.Service img {
+    margin-bottom: 1px;
+}
+
+
+/* ここからハンバーガーメニュー内のテキストサイズなど */
+.Hometext {
+    font-size: 32px;
+    font-family: "Silom", sans-serif;
+    letter-spacing: 10px;
+}
+
+.Hamlogo {
+    vertical-align: bottom;
+}
+
+#g-nav {
+    /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+    position: fixed;
+    z-index: 999;
+    /*ナビのスタート位置と形状*/
+    top: -120%;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    /*ナビの高さ*/
+    /*動き*/
+    transition: all 0.6s;
+}
+
+.Hamback {
+    background-color: #ffce03;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-position-y: 90%;
+}
+
+.panelactive {
+    background-image: url(../images/cheese02.jpg);
+    animation: bg-slide 4s ease-in forwards;
+}
+
+@keyframes bg-slide {
+    0% {
+        background-position-y: 90%;
+    }
+
+    100% {
+        background-position-y: -200px;
+    }
+}
+
+/*アクティブクラスがついたら位置を0に*/
+#g-nav.panelactive {
+    top: 0;
+}
+
+/*ナビゲーションの縦スクロール*/
+#g-nav.panelactive #g-nav-list {
+    /*ナビの数が増えた場合縦スクロール*/
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100vh;
+    /*表示する高さ*/
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/*ナビゲーション*/
+#g-nav ul {
+    /*ナビゲーション中央揃え*/
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 70px;
+}
+
+/*リストのレイアウト設定*/
+
+#g-nav li {
+    list-style: none;
+}
+
+#g-nav li a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    position: relative;
+}
+
+#g-nav li a img {
+    position: absolute;
+    left: -70px;
+    bottom: 0;
+    width: 50px;
+}
+
+/*========= ボタンのCSS ===============*/
+.openbtn1 {
+    /* position: fixed;
+    z-index: 9999;
+    /*ボタンを最前面に
+    top: 10px;
+    right: 10px; */
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+
+.openbtn1 span {
+    display: block;
+    transition: all .4s;
+    position: absolute;
+    right: 14px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: #ffffff;
+    width: 45%;
+}
+
+.openbtn1 span:nth-of-type(1) {
+    top: 15px;
+}
+
+.openbtn1 span:nth-of-type(2) {
+    top: 23px;
+}
+
+.openbtn1 span:nth-of-type(3) {
+    top: 31px;
+}
+
+.openbtn1.active span:nth-of-type(1) {
+    top: 18px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 30%;
+}
+
+.openbtn1.active span:nth-of-type(2) {
+    opacity: 0;
+}
+
+.openbtn1.active span:nth-of-type(3) {
+    top: 30px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 30%;
+}
+
+
+
+
+
+.copy {
+    text-align: center;
+    margin-left: 40px;
+    margin-top: 45px;
+    font-family: "Silom", sans-serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.shoplogo {
+    /* border: solid 1px skyblue; */
+    float: right;
+    margin-bottom: auto;
+    margin-right: 10px;
+}
+
+/* animation */
+.fade {
+    animation: fadeIn 0.6s ease normal forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* ここからトップページ */
+.main {
+    /* background-color: #f00; */
+    background-image: url(../images/service.png);
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 915px;
+    overflow: hidden;
+    /* border: solid 1px tomato; */
+}
+.mainLogoWrap {
+    position: absolute;
+    text-align: center;
+    z-index: 20;
+    /* border: solid 5px skyblue; */
+    width: 600px;
+    height: 170px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.mainText {
+    position: absolute;
+    /* border: solid 1px tomato; */
+    z-index: 30;
+    /* margin-top: 530px; */
+    /* margin-left: 68px; */
+    bottom: 10px;
+    left: 60px;
+    font-family: "A P-OTF 凸版文久見出ゴ Std", sans-serif;
+    font-size: 38px;
+    letter-spacing: 20px;
+    animation: fadeinAnime 6s 0.2s forwards ease;
+}
+
+@keyframes fadeinAnime {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+.mainLogoWrap img {
+    width: 100%;
+    text-align: center;
+    animation: 3s fuwafuwa infinite;
+}
+
+@keyframes fuwafuwa {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.MainBack{
+    background-color: #1A8991;
+}
+
+.SubBack{
+    background-color: #CF632B;
+    width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.Love{
+    width: 600px;
+    border: solid 1px #000;
+}
+
+.LoveHead{
+    color: #B39B6F;
+    font-family: "Silom", sans-serif;
+    font-size: 60px;
+    margin-left: 20px;
+    padding-top: 10px;
+    letter-spacing: 10px;
+    /* text-decoration: underline; */
+}
+
+.LoveImg{
+    margin-top: 30px;
+    width: 150px;
+    text-align: center;
+}
+
+.LoveText{
+    font-size: 18px;
+    font-family: "A-OTF 太ゴB101 Pr6", sans-serif;
+    color: #ffffff;
+    line-height: 85px;
+    text-align: center;
+    letter-spacing: 3px;
+    margin-top: 20px;
+}
+
+.ServiceHead{
+    color: #B39B6F;
+    font-family: "Silom", sans-serif;
+    font-size: 60px;
+    margin-left: 20px;
+    padding-top: 80px;
+}
+
+.HereHead{
+    font-family: "Phosphate", sans-serif;
+    margin-top: 60px;
+    letter-spacing: 2px;
+    font-size: 40px;
+}
+
+.HereText{
+    font-size: 18px;
+    font-family: "A-OTF 太ゴB101 Pr6", sans-serif;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 80px;
+    margin-top: -60px;
+}
+
+.HereTitle{
+    font-size: 25px;
+    font-family:sans-serif;
+    /* line-height: 70px; */
+    letter-spacing: 3px;
+}
+.HereTextWrap{
+    font-family: "A-OTF 太ゴB101 Pr6", sans-serif;
+    /* letter-spacing: 1px; */
+    font-size: 14px;
+}
+
+.ThisHead{
+    font-family: "Phosphate", sans-serif;
+    margin-top: 60px;
+    letter-spacing: 10px;
+    font-size: 40px;
+}
+.ThisText{
+    font-size: 18px;
+    font-family: "A-OTF 太ゴB101 Pr6", sans-serif;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 80px;
+    margin-top: 90px;
+    line-height: 40px;
+}
+
+.ThisTitle{
+    font-size: 25px;
+    font-family:sans-serif;
+    /* line-height: 70px; */
+    letter-spacing: 3px;
+}
+.ThisTextWrap{
+    font-family: "A-OTF 太ゴB101 Pr6", sans-serif;
+    /* letter-spacing: 1px; */
+    font-size: 14px;
+}
+
+/* [Here you are;This is me]Hover時 */
+
+.sample11 {
+	/* width:			280px; */
+	/* height:			188px; */
+	overflow:		hidden;
+	margin:			10px 8px 10px 16px;
+	position:		relative;
+}
+.sample11 .caption {
+	font-size:		130%;
+	color:			#fff;
+	padding-top:		80px;
+	padding-left:		20px;
+}
+.sample11 .mask {
+	width:			50%;	/* 画像の半分の大きさにする */
+	height:			100%;
+	position:		absolute;
+	top:			0;
+	left:			0;
+	margin-left:		-50%;	/* 枠の左に置いて表示させない */
+	background-color:	rgba(0,0,0,0.4);
+	-webkit-transition:	all 0.4s ease;
+	transition:		all 0.4s ease;
+}
+.sample11:hover .mask {
+	margin-left:		0px;	/* 右にずらして表示する */
+}
+.sample11 img {
+	-webkit-transition:	all 0.4s ease;
+	transition:		all 0.4s ease;
+}
+.sample11:hover img {
+	margin-left:		50%;	/* 画像を半分サイズ、右にずらす */
+}
+
+.Anxiety{
+    color: #B39B6F;
+    font-family: "A P-OTF 凸版文久見出ゴ Std", sans-serif;
+    font-size: 40px;
+    margin-left: 20px;
+    padding-top: 80px;
+    letter-spacing: 3px;
+}
+
+.LovePoster{
+    width: 440px;
+    margin-top: 30px;
+}
+
+.TicketTable{
+    width: 640px;
+    float: right;
+    margin-top: 125px;
+    margin-right: 10px;
+}
+
+.ShopExp{
+    font-size: 25px;
+    margin-top: 20px;
+    font-family: "A P-OTF 凸版文久見出ゴ Std", sans-serif;
+}
+
+.On{
+    font-size: 30px;
+    color: #fff;
+}  
+
+.ShopText{
+    font-size: 15px;
+    font-family: "A P-OTF 凸版文久見出ゴ Std", sans-serif;
+    margin-right: 8px;
+}
+
+.Question{
+    font-size: 20px;
+    margin-right: 8px;
+    margin-top: 50px;
+    padding-bottom: 40px;
+    text-decoration: underline 8%;
+    font-family: sans-serif;
+}
